@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Coding Journey | Future AI Developer</title>
+    <style>
+        /* Modern CSS with smooth animations */
+        :root {
+            --primary: #6c63ff;  /* Purple accent */
+            --dark: #1a1a2e;    /* Dark blue */
+            --light: #f5f5f7;    /* Off-white */
+        }
+        
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), #4a3fbf);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            nav { flex-direction: column; align-items: center; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with your name and tagline -->
+    <header>
+        <h1>Hi, I'm Alex!</h1>
+        <p class="tagline">New coder | Python enthusiast | Future AI developer</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#coding">Coding Journey</a>
+        <a href="#ai">AI Dreams</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm just starting my coding journey, and I'm absolutely loving it! 
+                Every day brings new challenges and exciting discoveries in the world 
+                of programming.
+            </p>
+            <p>
+                When I'm not coding, you might find me reading tech articles, 
+                experimenting with small projects, or dreaming about the future of AI.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Coding Journey Section -->
+    <section id="coding">
+        <div class="card">
+            <h2>My Coding Journey</h2>
+            <p>
+                I began learning Python because of its simplicity and power. 
+                It's amazing how you can build so many things - from simple scripts 
+                to complex applications!
+            </p>
+            <p>
+                So far I've learned:
+            </p>
+            <div class="skills">
+                <span class="skill-tag">Python Basics</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Problem Solving</span>
+            </div>
+            <p>
+                My next goal is to build my first real project - maybe a simple 
+                game or a useful automation tool!
+            </p>
+        </div>
+    </section>
+    
+    <!-- AI Interest Section -->
+    <section id="ai">
+        <div class="card">
+            <h2>My AI Excitement</h2>
+            <p>
+                Artificial Intelligence fascinates me because it's changing our world 
+                in incredible ways. I want to understand how machine learning works 
+                and eventually build my own AI models!
+            </p>
+            <p>
+                I'm particularly interested in:
+            </p>
+            <ul>
+                <li>How neural networks learn from data</li>
+                <li>Natural language processing (like ChatGPT!)</li>
+                <li>Computer vision (how AI sees images)</li>
+            </ul>
+            <p>
+                I believe AI can solve real-world problems, and I want to be part 
+                of that future.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="card">
+            <h2>Let's Connect!</h2>
+            <p>
+                I'm always open to meeting fellow learners and experienced developers 
+                who can guide me on this journey.
+            </p>
+            <p>
+                You can reach me at: <strong>alex@example.com</strong>
+            </p>
+            <p>
+                Or find me on GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Alex's Coding Journey | Made with ❤️ and HTML/CSS</p>
+    </footer>
+</body>
+</html>
